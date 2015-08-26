@@ -1,0 +1,300 @@
+/* CSS Document */
+body {
+	background-color: #f2f2f2;
+}
+
+#main {
+	margin-top: 80px;
+}
+
+.module {
+	border: 1px solid #F2F2F2;
+	border-radius: 3px;
+	box-shadow: 0px 0px 8px #e8e8e8;
+	background-color: #FFF;
+}
+/*
+* 顶部菜单css
+*/
+#top-menu .navbar-brand {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+#top-menu .navbar-nav {
+	font-weight: bold;
+	font-size: large;
+}
+
+#top-menu form .right {
+	padding-right: 20px;
+}
+/*
+* 左边菜单css
+*/
+#left-module {
+	padding: 15px;
+}
+
+#left-module .div-one {
+	padding: 10px;
+	padding-left: 15px;
+	overflow: hidden;
+}
+
+#left-module .div-one>div {
+	float: left;
+}
+
+#left-module .div-one .head img {
+	width: 80px;
+	height: 80px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0px 0px 5px #ddd;
+}
+
+#left-module .div-one ul {
+	list-style-type: none;
+	width: 85px;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 10px;
+	font-size: 13px;
+}
+
+#left-module .div-second {
+	padding: 15px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#left-module .div-second ul li {
+	padding: 0px 10px;
+}
+
+#left-module .div-second ul li a {
+	color: #3399FF;
+	font-weight: bold;
+}
+
+#left-module .div-second ul li a:hover {
+	text-decoration: none;
+	color: #c00;
+}
+
+#left-menu ul {
+	padding: 0px;;
+	margin: 0px;
+	list-style-type: none;
+}
+
+#left-menu ul li div.li-head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+	padding: 6px 0px;
+	padding-left: 30px;
+	border-radius: 4px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+#left-menu ul li div.li-head a {
+	color: #000;
+}
+
+#left-menu ul li div.li-head a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#left-menu ul li div.li-head-def {
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+	padding: 6px 0px;
+	padding-left: 30px;
+	border-radius: 4px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+#left-menu ul li div.li-head-def a {
+	color: #000;
+}
+
+#left-menu ul li div.li-head-def a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#left-menu ul li div.li-move {
+	cursor: pointer;
+	color: #FFF;
+	background-color: #428BCA;
+}
+
+#left-menu ul li div.li-move a {
+	color: #fff;
+}
+
+#left-menu ul li div.li-active {
+	cursor: pointer;
+	color: #FFF;
+	background-color: #428BCA;
+}
+
+#left-menu ul li div.li-active a {
+	color: #FFF;
+}
+
+#left-menu ul li div.li-active .arrow {
+	background: url(../images/arrow-u.png) no-repeat center center;
+}
+
+#left-menu ul li .arrow {
+	float: right;
+	width: 28px;
+	height: 28px;
+	margin-right: 5px;
+	background: url(../images/arrow-d.png) no-repeat center center;
+}
+
+#left-menu .menu-two {
+	display: none;
+}
+
+#left-menu .menu-two li {
+	font-size: 16px;
+	text-align: center;
+	padding: 8px 0px;
+	margin: 1px auto;
+	border-radius: 3px;
+}
+
+#left-menu .menu-two li a {
+	color: #000;
+}
+
+#left-menu .menu-two li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#left-menu .menu-two li.li-active2 {
+	color: #FFF;
+	cursor: pointer;
+	background-color: #0099CC;
+}
+
+#left-menu .menu-two li.li-active2 a {
+	color: #FFF;
+}
+
+#left-menu .menu-two li.li-move2 {
+	color: #FFF;
+	cursor: pointer;
+	background-color: #0099CC;
+}
+
+#left-menu .menu-two li.li-move2 a {
+	color: #FFF;
+}
+
+/* 右边部分css */
+#right {
+	padding: 0px;
+}
+
+#right>div {
+	padding: 15px;
+}
+
+#right p.title {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 3px 0px;
+	border-bottom: 1px solid #ddd;
+}
+
+#right ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#right ul li {
+	padding: 10px 5px;
+	font-size: 13px;
+	border-bottom: 1px dashed #ccc;
+	overflow: hidden;
+}
+
+#right ul li dl {
+	margin: 0px;
+	padding: 0px;
+}
+
+#right ul li dl dd.pull-left {
+	margin-left: 10px;
+}
+
+#right ul li dl img {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#right ul li dl .btn-sm {
+	font-size: 13px;
+	padding: 2px 6px;
+}
+
+#right ul li dl .addicon {
+	font: bold 16px Arial;
+	height: 16px;
+	text-decoration: none;
+	color: #FFA00A;
+}
+/*******/
+#middle>div {
+	margin:15px;
+	margin-bottom:0px;
+}
+
+#middle .page-header {
+	margin: 0px;
+	font-weight: bold;
+}
+/*
+* 底部链接
+*/
+#web-link {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+#web-link ul {
+	margin: 0px;
+}
+
+#web-link ul li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#web-link ul li a:link,#web-link ul li a:visited {
+	color: #555;
+}
+
+#web-link ul li a:hover,#web-link ul li a:active {
+	color: #f00;
+}
+/***********/
+abbr[title]{
+	border-bottom:0px;
+}
