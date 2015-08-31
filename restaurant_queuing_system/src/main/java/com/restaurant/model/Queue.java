@@ -1,5 +1,7 @@
 package com.restaurant.model;
 
+import java.util.Date;
+
 public class Queue {
     private Integer id;
 
@@ -9,7 +11,7 @@ public class Queue {
 
     private Integer storeId;
 
-    private Integer createTime;
+    private Date createTime;
 
     public Integer getId() {
         return id;
@@ -43,11 +45,11 @@ public class Queue {
         this.storeId = storeId;
     }
 
-    public Integer getCreateTime() {
+    public Date getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Integer createTime) {
+    public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 }

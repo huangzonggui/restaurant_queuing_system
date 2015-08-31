@@ -24,45 +24,38 @@
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
 		<!-- 生成的映射文件包名和位置 -->
-		<sqlMapGenerator targetPackage=""
+		<sqlMapGenerator targetPackage="lib"
 			targetProject="D:\web workspace\restaurant\restaurant_queuing_system\restaurant_queuing_system\src\main\resources\mapper">
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
 		<!-- 生成DAO的包名和位置 -->
 		<javaClientGenerator type="XMLMAPPER"
-			targetPackage="com.restaurant.dao" targetProject="D:\web workspace\restaurant\restaurant_queuing_system\restaurant_queuing_system\src\main\java">
+			targetPackage="com.restaurant.dao"
+			targetProject="D:\web workspace\restaurant\restaurant_queuing_system\restaurant_queuing_system\src\main\java">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 		<!-- 要生成那些表(更改tableName和domainObjectName就可以) -->
-		<!-- <table tableName="t_user" domainObjectName="User"
-			enableCountByExample="false" enableUpdateByExample="false"
-			enableDeleteByExample="false" enableSelectByExample="false"
-			selectByExampleQueryId="false" />
-		<table tableName="t_queue" domainObjectName="Queue"
-			enableCountByExample="false" enableUpdateByExample="false"
-			enableDeleteByExample="false" enableSelectByExample="false"
-			selectByExampleQueryId="false" />
-		<table tableName="t_order" domainObjectName="Order"
-			enableCountByExample="false" enableUpdateByExample="false"
-			enableDeleteByExample="false" enableSelectByExample="false"
-			selectByExampleQueryId="false" />
-		<table tableName="t_menu" domainObjectName="Menu"
-			enableCountByExample="false" enableUpdateByExample="false"
-			enableDeleteByExample="false" enableSelectByExample="false"
-			selectByExampleQueryId="false" />
-		<table tableName="t_history" domainObjectName="History"
-			enableCountByExample="false" enableUpdateByExample="false"
-			enableDeleteByExample="false" enableSelectByExample="false"
-			selectByExampleQueryId="false" />
-		<table tableName="t_comment" domainObjectName="Comment"
-			enableCountByExample="false" enableUpdateByExample="false"
-			enableDeleteByExample="false" enableSelectByExample="false"
-			selectByExampleQueryId="false" />
-		<table tableName="t_comment_picture" domainObjectName="CommetPicture"
-			enableCountByExample="false" enableUpdateByExample="false"
-			enableDeleteByExample="false" enableSelectByExample="false"
+		<!-- <table tableName="t_user" domainObjectName="User" enableCountByExample="false" 
+			enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" 
+			selectByExampleQueryId="false" /> <table tableName="t_queue" domainObjectName="Queue" 
+			enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" 
+			enableSelectByExample="false" selectByExampleQueryId="false" /> <table tableName="t_order" 
+			domainObjectName="Order" enableCountByExample="false" enableUpdateByExample="false" 
+			enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" 
+			/> <table tableName="t_menu" domainObjectName="Menu" enableCountByExample="false" 
+			enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" 
+			selectByExampleQueryId="false" /> <table tableName="t_history" domainObjectName="History" 
+			enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" 
+			enableSelectByExample="false" selectByExampleQueryId="false" /> <table tableName="t_comment" 
+			domainObjectName="Comment" enableCountByExample="false" enableUpdateByExample="false" 
+			enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" 
+			/> <table tableName="t_comment_picture" domainObjectName="CommetPicture" 
+			enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" 
+			enableSelectByExample="false" selectByExampleQueryId="false" /> -->
+		<!-- <table tableName="t_order_groud" domainObjectName="OrderGroud" enableCountByExample="false" 
+			enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" 
 			selectByExampleQueryId="false" /> -->
-			<table tableName="t_order_groud" domainObjectName="OrderGroud"
+		<table tableName="t_queue" domainObjectName="Queue"
 			enableCountByExample="false" enableUpdateByExample="false"
 			enableDeleteByExample="false" enableSelectByExample="false"
 			selectByExampleQueryId="false" />
