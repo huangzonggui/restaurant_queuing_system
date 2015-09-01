@@ -37,13 +37,13 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public User findUser(int id) {
+	public String findUser(int id) {
 		// TODO Auto-generated method stub
 		User user = new User();
 		if (id>0) {
 			user = userMapper.selectByPrimaryKey(id);
 		}
-		return user;
+		return "";
 	}
 
 	@Override

@@ -9,7 +9,7 @@ public interface UserService {
 	//更新用户
 	public int updateUser(User user);
 	//通过id查找用户
-	public User findUser(int id);
+	public String findUser(int id);
 	//根据id删除用户
 	public int deletUser(int id);
 	

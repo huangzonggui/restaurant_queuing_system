@@ -1,6 +1,7 @@
 package com.restaurant.service.impl;
 
 import java.sql.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -32,6 +33,12 @@ public class QueueServiceImpl implements QueueService {
 	public int deleteQueue(int id) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	@Override
+	public String queryQueue(int index, int last) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

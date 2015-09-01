@@ -33,13 +33,13 @@ public class MenuServiceImpl implements MenuService {
 	}
 
 	@Override
-	public Menu findMenuById(int id) {
+	public String findMenuById(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Menu> findMenuList() {
+	public String findMenuList() {
 		// TODO Auto-generated method stub
 		return null;
 	}

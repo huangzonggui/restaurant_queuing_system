@@ -1,5 +1,7 @@
 package com.restaurant.service;
 
+import java.util.List;
+
 import com.restaurant.model.Queue;
 
 /**
@@ -20,4 +22,11 @@ public interface QueueService {
 	 * @return
 	 */
 	public int deleteQueue(int id);
+	/**
+	 * 查询排号
+	 * @param index
+	 * @param last
+	 * @return
+	 */
+	public String queryQueue(int index,int last);
 }

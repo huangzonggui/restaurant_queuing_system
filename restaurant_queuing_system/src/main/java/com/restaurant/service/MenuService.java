@@ -13,7 +13,7 @@ public interface MenuService {
 	//更改菜单
 	public int updateMenu(Menu menu);
 	//查找菜单
-	public  Menu findMenuById(int id);
+	public  String findMenuById(int id);
 	//查找菜单列表
-	public List<Menu> findMenuList();
+	public String findMenuList();
 }
