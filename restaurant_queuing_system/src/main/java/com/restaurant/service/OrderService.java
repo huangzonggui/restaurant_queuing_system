@@ -12,7 +12,7 @@ public interface OrderService {
 	//更改订单
 	public int updateOrder(Order order);
 	//查找订单
-	public Order findOrderById(int id);
+	public String findOrderById(int id);
 	//通过用户id来查找订单列表
-	public List<Order> findOrderByUserId(int userId);
+	public String findOrderByUserId(int userId);
 }

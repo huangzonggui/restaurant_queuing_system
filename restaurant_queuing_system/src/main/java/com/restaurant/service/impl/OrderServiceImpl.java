@@ -32,13 +32,13 @@ public class OrderServiceImpl implements OrderService {
 	}
 
 	@Override
-	public Order findOrderById(int id) {
+	public String findOrderById(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Order> findOrderByUserId(int userId) {
+	public String findOrderByUserId(int userId) {
 		// TODO Auto-generated method stub
 		return null;
 	}
