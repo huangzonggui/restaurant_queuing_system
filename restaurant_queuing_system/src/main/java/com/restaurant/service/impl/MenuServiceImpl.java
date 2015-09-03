@@ -1,5 +1,6 @@
 package com.restaurant.service.impl;
 
+import java.sql.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,28 +16,46 @@ public class MenuServiceImpl implements MenuService {
 	
 	@Autowired
 	private MenuMapper menuMapper;
+	int result = 0;
 
 	@Override
 	public int addMenu(Menu menu) {
 		// TODO Auto-generated method stub
+		if (menu!=null) {
+			menu.setCreateTime(new Date(System.currentTimeMillis()));
+			result=menuMapper.insert(menu);
+			return result;
+		}
 		return 0;
 	}
 
 	@Override
 	public int deleteMenu(int id) {
 		// TODO Auto-generated method stub
+		if (id>0) {
+			result = menuMapper.deleteByPrimaryKey(id);
+			return result;
+		}
 		return 0;
 	}
 
 	@Override
 	public int updateMenu(Menu menu) {
 		// TODO Auto-generated method stub
+		if (menu!=null) {
+			result = menuMapper.updateByPrimaryKey(menu);
+			return result;
+		}
 		return 0;
 	}
 
 	@Override
 	public String findMenuById(int id) {
 		// TODO Auto-generated method stub
+		Menu menu = new Menu();
+		if (id>0) {
+			menu = menuMapper.selectByPrimaryKey(id);
+		}
 		return null;
 	}
 
