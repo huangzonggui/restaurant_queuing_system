@@ -1,5 +1,7 @@
 package com.restaurant.dao;
 
+import org.apache.ibatis.annotations.Param;
+
 import com.restaurant.model.User;
 
 public interface UserMapper {
@@ -10,6 +12,13 @@ public interface UserMapper {
     int insertSelective(User record);
 
     User selectByPrimaryKey(Integer id);
+    
+    /**
+     * 通过用户名查询用户信息，用于登录
+     * @param user_name
+     * @return
+     */
+    User selectByUserName(@Param("resourceName") String user_name);
 
     int updateByPrimaryKeySelective(User record);
 
