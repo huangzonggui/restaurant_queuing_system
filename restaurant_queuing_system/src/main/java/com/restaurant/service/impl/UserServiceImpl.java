@@ -26,6 +26,9 @@ public class UserServiceImpl implements UserService{
 		return result;
 	}
 
+	/**
+	 * 用户资料更新功能
+	 */
 	@Override
 	public int updateUser(User user) {
 		// TODO Auto-generated method stub

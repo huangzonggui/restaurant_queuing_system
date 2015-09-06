@@ -18,7 +18,7 @@ public interface UserMapper {
      * @param user_name
      * @return
      */
-    User selectByUserName(@Param("resourceName") String user_name);
+    User selectByUserName(@Param("user_name") String user_name);
 
     int updateByPrimaryKeySelective(User record);
 

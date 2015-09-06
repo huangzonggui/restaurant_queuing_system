@@ -21,6 +21,7 @@ public class UserController {
 	
 	@Autowired
 	private UserService userService;
+	
 	/**
 	 * 用户登录
 	 * @param session
@@ -30,7 +31,7 @@ public class UserController {
 	 */
 	@RequestMapping(value="/login",method = RequestMethod.POST)
 	@ResponseBody
-	public String userLogin(HttpSession session,String userName,String password){
+	public String userLogin(String userName,String password){
 		User user = new User();
 		String result = null;
 		JSONObject jsonObject = new JSONObject();
@@ -55,8 +56,13 @@ public class UserController {
 		return result;
 	}
 	
+	/**
+	 * 用户注册
+	 * @param user
+	 * @return
+	 */
 	@RequestMapping(value="register", method = RequestMethod.POST)
-	public String register(HttpSession session,User user){
+	public String register(User user){
 		int result = 0;
 		JSONObject jsonObject = new JSONObject();
 		if (user==null) {
@@ -65,7 +71,23 @@ public class UserController {
 		result = userService.addUser(user);
 		if (result!=0) {
 			//登录成功，返回用户信息
-			return userLogin(session, user.getUserName(), user.getPwd());
+			return userLogin(user.getUserName(), user.getPwd());
+		}
+		return null;
+	}
+	/**
+	 * 更新用户
+	 * @param user
+	 * @return
+	 */
+	@RequestMapping(value="updateUser", method = RequestMethod.POST)
+	public String updateUser(User user){
+		int result = 0;
+		if (user!=null) {
+			result = userService.updateUser(user);
+			if (result!=0) {
+				return userLogin(user.getUserName(), user.getPwd());
+			}
 		}
 		return null;
 	}

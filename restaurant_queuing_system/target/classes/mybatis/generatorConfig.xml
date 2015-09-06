@@ -52,12 +52,12 @@
 			/> <table tableName="t_comment_picture" domainObjectName="CommetPicture" 
 			enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" 
 			enableSelectByExample="false" selectByExampleQueryId="false" /> -->
-		<!-- <table tableName="t_order_groud" domainObjectName="OrderGroud" enableCountByExample="false" 
+		<table tableName="t_order_groud" domainObjectName="OrderGroud" enableCountByExample="false" 
 			enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" 
-			selectByExampleQueryId="false" /> -->
-		<table tableName="t_queue" domainObjectName="Queue"
+			selectByExampleQueryId="false" />
+		<!-- <table tableName="t_queue" domainObjectName="Queue"
 			enableCountByExample="false" enableUpdateByExample="false"
 			enableDeleteByExample="false" enableSelectByExample="false"
-			selectByExampleQueryId="false" />
+			selectByExampleQueryId="false" /> -->
 	</context>
 </generatorConfiguration>
