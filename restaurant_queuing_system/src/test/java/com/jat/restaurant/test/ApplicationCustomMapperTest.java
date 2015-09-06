@@ -21,7 +21,7 @@ public class ApplicationCustomMapperTest {
 	@Test
 	public void addUser(){
 		User user = new User();
-		user.setUserName("陈春杰");
+		user.setUserName("陈春杰5");
 		user.setAge(23);
 		user.setCreateTime(new Date(System.currentTimeMillis()));
 		user.setPhone("15088132300");
