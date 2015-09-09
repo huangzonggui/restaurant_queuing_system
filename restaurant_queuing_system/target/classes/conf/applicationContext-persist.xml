@@ -68,7 +68,7 @@
 	</bean>
 
 	<!-- mybatis文件配置，扫描所有mapper文件 -->
-	<!-- configLocation为mybatis属性  mapperLocations为所有mapper -->
+	<!-- configLocation为mybatis属性 mapperLocations为所有mapper -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
 		p:dataSource-ref="dataSource" p:configLocation="classpath:conf/mybatis-config.xml"
 		p:mapperLocations="classpath:mapper/*.xml" />
@@ -81,4 +81,5 @@
 	<bean id="transactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
 		p:dataSource-ref="dataSource" />
+
 </beans>

@@ -1,5 +1,7 @@
 package com.restaurant.dao;
 
+import java.util.List;
+
 import com.restaurant.model.Menu;
 
 public interface MenuMapper {
@@ -14,4 +16,6 @@ public interface MenuMapper {
     int updateByPrimaryKeySelective(Menu record);
 
     int updateByPrimaryKey(Menu record);
+    
+    List<Menu> selectAll();
 }

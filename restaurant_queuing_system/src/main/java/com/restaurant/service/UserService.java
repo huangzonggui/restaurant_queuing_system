@@ -1,7 +1,8 @@
 package com.restaurant.service;
 
-import com.restaurant.model.User;
+import org.springframework.stereotype.Repository;
 
+import com.restaurant.model.User;
 public interface UserService {
 
 	//添加用户

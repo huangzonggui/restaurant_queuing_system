@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.restaurant.dao.UserMapper;
 import com.restaurant.model.User;
 import com.restaurant.service.UserService;
+
 @Service
 public class UserServiceImpl implements UserService{
 

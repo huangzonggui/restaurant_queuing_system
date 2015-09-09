@@ -10,24 +10,30 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.restaurant.dao.UserMapper;
 import com.restaurant.model.User;
+import com.restaurant.service.UserService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations={"classpath:conf/applicationContext-persist.xml"})
+@ContextConfiguration(locations={"classpath:conf/applicationContext-persist.xml","classpath:conf/applicationContext-service.xml"})
 public class ApplicationCustomMapperTest {
 
+//	@Autowired
+//	private UserMapper userMapper;
+	
+	
 	@Autowired
-	private UserMapper userMapper;
+	private UserService service;
 	
 	@Test
 	public void addUser(){
 		User user = new User();
-		user.setUserName("陈春杰5");
+		user.setUserName("陈春杰7");
 		user.setAge(23);
 		user.setCreateTime(new Date(System.currentTimeMillis()));
 		user.setPhone("15088132300");
 		user.setPwd("123456");
 		user.setEmail("919700667@qq.com");
-		int i = userMapper.insert(user);
+		int i =service.addUser(user);
+//		int i = userMapper.insert(user);
 		System.out.println(i);
 	}
 	

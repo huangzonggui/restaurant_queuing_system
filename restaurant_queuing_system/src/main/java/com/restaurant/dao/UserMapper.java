@@ -1,9 +1,11 @@
 package com.restaurant.dao;
 
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import com.restaurant.model.User;
 
+@Repository
 public interface UserMapper {
     int deleteByPrimaryKey(Integer id);
 

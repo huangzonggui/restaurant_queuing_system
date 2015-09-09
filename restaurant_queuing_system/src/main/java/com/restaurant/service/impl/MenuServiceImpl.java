@@ -62,6 +62,7 @@ public class MenuServiceImpl implements MenuService {
 	@Override
 	public String findMenuList() {
 		// TODO Auto-generated method stub
+//		menuMapper
 		return null;
 	}
 	

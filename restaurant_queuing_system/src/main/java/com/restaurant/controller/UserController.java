@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.JsonObject;
@@ -29,7 +30,7 @@ public class UserController {
 	 * @param password
 	 * @return
 	 */
-	@RequestMapping(value="/login",method = RequestMethod.POST)
+	@RequestMapping(value="/login",method = RequestMethod.GET)
 	@ResponseBody
 	public String userLogin(String userName,String password){
 		User user = new User();
@@ -61,13 +62,17 @@ public class UserController {
 	 * @param user
 	 * @return
 	 */
-	@RequestMapping(value="register", method = RequestMethod.POST)
-	public String register(User user){
+	@RequestMapping(value="register", method = RequestMethod.GET)
+	public String register(@RequestParam(value="userName",required = false,defaultValue = "")String userName,
+			@RequestParam(value="password",required = false,defaultValue = "")String password,
+			@RequestParam(value="phone",required = false,defaultValue = "")String phone,
+			@RequestParam(value="email",required = false,defaultValue = "")String email,
+			@RequestParam(value="sex",required = false,defaultValue = "男")String sex){
 		int result = 0;
 		JSONObject jsonObject = new JSONObject();
-		if (user==null) {
-			return "1";
-		}
+//		if (user==null) {
+//			return "1";
+//		}
 		result = userService.addUser(user);
 		if (result!=0) {
 			//登录成功，返回用户信息
