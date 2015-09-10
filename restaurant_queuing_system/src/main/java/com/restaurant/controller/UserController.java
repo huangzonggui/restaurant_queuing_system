@@ -73,6 +73,8 @@ public class UserController {
 //		if (user==null) {
 //			return "1";
 //		}
+		
+		User user = null;
 		result = userService.addUser(user);
 		if (result!=0) {
 			//登录成功，返回用户信息
