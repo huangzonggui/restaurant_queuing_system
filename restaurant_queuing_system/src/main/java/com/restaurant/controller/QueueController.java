@@ -49,6 +49,7 @@ public class QueueController {
 	@RequestMapping(value="findQueueById")
 	public String queryQueueById(int userId,int page){
 		queueList = new ArrayList<Queue>();
+		int type = 0;
 		if (page==0) {
 			index = 0;
 			last = pageCount;
@@ -56,7 +57,7 @@ public class QueueController {
 			index = page*pageCount;
 			last = index+pageCount-1;
 		}
-		result = queueService.queryQueue(index, last);
+		result = queueService.queryQueue(index, last,type);
 //		queueList.
 		return result;
 	}

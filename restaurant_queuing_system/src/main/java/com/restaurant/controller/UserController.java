@@ -1,11 +1,14 @@
 package com.restaurant.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import jdk.nashorn.internal.ir.RuntimeNode.Request;
 
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -23,6 +26,12 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
+	@RequestMapping(value="/login")
+	@ResponseBody
+	public String login(HttpServletRequest request,HttpServletResponse response){
+		return "1";
+	}
+	
 	/**
 	 * 用户登录
 	 * @param session
@@ -30,9 +39,9 @@ public class UserController {
 	 * @param password
 	 * @return
 	 */
-	@RequestMapping(value="/login",method = RequestMethod.GET)
+	@RequestMapping(value="/loginuser",method = RequestMethod.GET)
 	@ResponseBody
-	public String userLogin(String userName,String password){
+	public String userLogin(HttpServletRequest request,String userName,String password){
 		User user = new User();
 		String result = null;
 		JSONObject jsonObject = new JSONObject();
@@ -78,7 +87,7 @@ public class UserController {
 		result = userService.addUser(user);
 		if (result!=0) {
 			//登录成功，返回用户信息
-			return userLogin(user.getUserName(), user.getPwd());
+			//return userLogin(user.getUserName(), user.getPwd());
 		}
 		return null;
 	}
@@ -93,7 +102,7 @@ public class UserController {
 		if (user!=null) {
 			result = userService.updateUser(user);
 			if (result!=0) {
-				return userLogin(user.getUserName(), user.getPwd());
+				//return userLogin(user.getUserName(), user.getPwd());
 			}
 		}
 		return null;

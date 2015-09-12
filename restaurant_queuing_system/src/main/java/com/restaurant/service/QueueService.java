@@ -28,5 +28,5 @@ public interface QueueService {
 	 * @param last
 	 * @return
 	 */
-	public String queryQueue(int index,int last);
+	public String queryQueue(int index,int last,int category);
 }
