@@ -43,6 +43,7 @@ public class QueueServiceImpl implements QueueService {
 	@Override
 	public String queryQueue(int index, int last,int category) {
 		// TODO Auto-generated method stub
+		
 		return null;
 	}
 

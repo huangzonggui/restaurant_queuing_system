@@ -32,6 +32,8 @@ public class UserController {
 		return "1";
 	}
 	
+	
+	
 	/**
 	 * 用户登录
 	 * @param session
